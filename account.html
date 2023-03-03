@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/variables.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/account.css" />
+        <script src="./javascript/navbar.js" defer></script>
+        <script src="./javascript/validation.js" defer></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-logo-title">SEA OF FTARS</div>
+            <div class="nav-content">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./heroes_and_enemy.html" class="nav-link"
+                    >Heroes & Enemies</a
+                >
+                <a href="./fan_art.html" class="nav-link">Fan Art</a>
+                <a href="./account.html" class="nav-link">Account</a>
+            </div>
+            <div class="nav-button-burger">
+                <div class="nav__burger"></div>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="sky-background-top">
+                <img
+                    src="./assets/Background/bg-pattern-sky-lg.png"
+                    class="sky-background-image-top"
+                    alt=""
+                />
+            </div>
+            <div class="top-content">
+                <img
+                    src="./assets/Icons/Account.svg"
+                    class="top-content-image"
+                    alt=""
+                />
+                <div class="top-content-title">Account</div>
+                <div class="top-content-text">
+                    create an account to keep getting the latest updates from
+                    the sea of FTars game
+                </div>
+            </div>
+            <form action="" class="form">
+                <input
+                    type="text"
+                    class="text-input"
+                    placeholder="Username"
+                    onfocus="this.placeholder =''"
+                    onblur="this.placeholder = 'Username'"
+                    id="username"
+                />
+                <select name="" id="country" class="select-input">
+                    <option value="" selected>Select Country</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Amerika">Amerika</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Brazil">Brazil</option>
+                </select>
+                <input
+                    type="text"
+                    class="text-input"
+                    placeholder="Email"
+                    onfocus="this.placeholder =''"
+                    onblur="this.placeholder = 'Email'"
+                    id="email"
+                />
+                <input
+                    type="text"
+                    class="text-input"
+                    placeholder="Password"
+                    onfocus="this.placeholder =''"
+                    onblur="this.placeholder = 'Password'"
+                    id="password"
+                />
+                <div class="checkbox-input-container">
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        class="checkbox-input"
+                        id="checkbox"
+                    />
+                    <p class="checkbox-text">
+                        I agree with terms and condition and the privacy policy
+                    </p>
+                </div>
+                <button class="create-button" id="create-button">
+                    Create Account
+                </button>
+            </form>
+        </main>
+
+        <!-- MENU BAR RESPONSIVE -->
+        <div class="menu-container" id="menu-container">
+            <div class="menu">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="menu">
+                <a href="./heroes_and_enemy.html">Heroes & Enemy</a>
+            </div>
+            <div class="menu">
+                <a href="./fan_art.html">Fan Art</a>
+            </div>
+            <div class="menu">
+                <a href="./account.html">Account</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-media">
+                <a href="" class="social-media__icon">
+                    <img
+                        src="./assets/Icons/instagram.svg"
+                        class="icon"
+                        alt=""
+                    />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/discord.svg" class="icon" alt="" />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/twitter.svg" class="icon" alt="" />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/twitch.svg" class="icon" alt="" />
+                </a>
+            </div>
+            <div class="copyright">©2022 SEA OF FTARS. ALL RIGHT RESERVED</div>
+        </footer>
+
+        <p class="error-message" id="error-message"></p>
+        <p class="success-message" id="success-message"></p>
+    </body>
+</html>

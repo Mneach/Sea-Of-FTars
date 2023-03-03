@@ -1,0 +1,266 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.sky-background-top {
+    width: 100%;
+    position: absolute;
+    top: -4rem;
+    z-index: -1;
+}
+
+.sky-background-image-top {
+    width: 100%;
+    height: 100%;
+    transform: scaleY(-1);
+}
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-top: 2rem;
+}
+
+.top-content-image {
+    width: 50%;
+}
+
+.top-content-title {
+    font-weight: 700;
+    font-size: var(--title-text-xxl);
+    text-shadow: 0px 0px 15px rgba(49, 156, 255, 0.67);
+}
+
+.top-content-text {
+    text-align: center;
+    width: 15rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.text-input {
+    display: inline-block;
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    width: 25%;
+    color: var(--text-color);
+    border-radius: 0.25rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.text-input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 1rem;
+}
+
+.select-input {
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    width: 25%;
+    color: var(--placeholder-color);
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.select-input:focus {
+    outline: none;
+}
+.checkbox-input-container {
+    width: 24%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    gap: 1rem;
+}
+
+.checkbox-input {
+    transform: scale(1.5);
+}
+
+.create-button {
+    padding: 0.5rem;
+    background-color: var(--submit-button-color);
+    font-size: var(--title-text-s);
+    width: 25%;
+    color: var(--text-color);
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.create-button:hover {
+    background-color: var(--submit-button-hover-color);
+}
+
+option {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: -10%;
+    background-color: var(--error-color);
+    padding: 1rem;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0.5rem;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+    z-index: 101;
+}
+
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: -10%;
+    background-color: var(--success-color);
+    padding: 1rem;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0.5rem;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+    z-index: 101;
+}
+
+@media screen and (max-width: 1050px) {
+    .text-input,
+    .select-input,
+    .create-button {
+        width: 30%;
+    }
+    .checkbox-input-container {
+        width: 29%;
+    }
+
+    .create-button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .text-input,
+    .select-input,
+    .create-button {
+        width: 40%;
+    }
+    .checkbox-input-container {
+        width: 39%;
+    }
+    .create-button {
+        font-size: 1rem;
+    }
+    .text-input,
+    .text-input::placeholder,
+    .select-input,
+    .text-input,
+    .select-input {
+        padding: 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .checkbox-text {
+        font-size: 0.75rem;
+    }
+    .checkbox-input {
+        transform: scale(1.3);
+    }
+    .top-content-image {
+        width: 40%;
+    }
+    .top-content-title {
+        font-size: 1.75rem;
+    }
+    .top-content-text {
+        font-size: 1rem;
+    }
+    .error-message,
+    .success-message {
+        width: 300px;
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .text-input,
+    .select-input,
+    .create-button {
+        width: 70%;
+    }
+    .checkbox-input-container {
+        width: 69%;
+    }
+    .create-button {
+        font-size: 1rem;
+    }
+    .text-input,
+    .text-input::placeholder,
+    .select-input {
+        font-size: 0.75rem;
+    }
+    .text-input,
+    .select-input {
+        padding: 0.6rem;
+    }
+
+    .checkbox-text {
+        font-size: 0.75rem;
+    }
+    .checkbox-input {
+        transform: scale(1.3);
+    }
+    .top-content-image {
+        width: 30%;
+    }
+    .top-content-title {
+        font-size: 1.25rem;
+    }
+    .top-content-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .error-message,
+    .success-message {
+        width: 260px;
+        padding: 0.75rem;
+    }
+}

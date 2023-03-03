@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/variables.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/characters.css" />
+        <script src="./javascript/heroes.js" defer></script>
+        <script src="./javascript/enemies.js" defer></script>
+        <script src="./javascript/navbar.js" defer></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-logo-title">SEA OF FTARS</div>
+            <div class="nav-content">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./heroes_and_enemy.html" class="nav-link"
+                    >Heroes & Enemies</a
+                >
+                <a href="./fan_art.html" class="nav-link">Fan Art</a>
+                <a href="./account.html" class="nav-link">Account</a>
+            </div>
+            <div class="nav-button-burger">
+                <div class="nav__burger"></div>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="sky-background-top">
+                <img
+                    src="./assets/Background/bg-pattern-sky-lg.png"
+                    class="sky-background-image-top"
+                    alt=""
+                />
+            </div>
+
+            <article class="heroes">
+                <div class="top-content">
+                    <img
+                        src="./assets/Icons/Heroes.svg"
+                        class="top-content-image"
+                        alt=""
+                    />
+                    <div class="top-content-title">Heroes</div>
+                    <div class="top-content-text">
+                        In sea of FTars there are lots of interesting heroes
+                        with unique powers
+                    </div>
+                </div>
+                <div class="heroes-container" id="heroes-container"></div>
+            </article>
+
+            <article class="enemies">
+                <div class="top-content">
+                    <img
+                        src="./assets/Icons/Enemy.svg"
+                        class="top-content-image"
+                        alt=""
+                    />
+                    <div class="top-content-title">Enemies</div>
+                    <div class="top-content-text">
+                        Strong enemies will definitely make the game more
+                        exciting
+                    </div>
+                </div>
+                <div class="enemies-container" id="enemies-container"></div>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <div class="social-media">
+                <a href="" class="social-media__icon">
+                    <img
+                        src="./assets/Icons/instagram.svg"
+                        class="icon"
+                        alt=""
+                    />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/discord.svg" class="icon" alt="" />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/twitter.svg" class="icon" alt="" />
+                </a>
+                <a href="" class="social-media__icon">
+                    <img src="./assets/Icons/twitch.svg" class="icon" alt="" />
+                </a>
+            </div>
+            <div class="copyright">©2022 SEA OF FTARS. ALL RIGHT RESERVED</div>
+        </footer>
+
+        <!-- MENU BAR RESPONSIVE -->
+        <div class="menu-container" id="menu-container">
+            <div class="menu">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="menu">
+                <a href="./heroes_and_enemy.html">Heroes & Enemy</a>
+            </div>
+            <div class="menu">
+                <a href="./fan_art.html">Fan Art</a>
+            </div>
+            <div class="menu">
+                <a href="./account.html">Account</a>
+            </div>
+        </div>
+
+        <!-- HEROES & ENEMIES TEMPLATE -->
+        <template class="hero-container" id="hero-template">
+            <img src="" class="hero-icon" alt="" />
+            <div class="hero-name"></div>
+        </template>
+
+        <template class="enemy-container" id="enemy-template">
+            <img src="" class="enemy-icon" alt="" />
+            <div class="enemy-name"></div>
+        </template>
+    </body>
+</html>

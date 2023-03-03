@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #131b21;
+    --secondary-color: #04253d;
+    --stroke-color: #0d6db2;
+    --text-color: #ffffff;
+    --border-color: #0d6db2;
+    --burger-color: #1189de;
+    --placeholder-color: rgba(255, 255, 255, 0.7);
+    --submit-button-color: #2a5ab7;
+    --error-color: rgb(241, 64, 64);
+    --success-color: #5cb85c;
+    --border-error-color: red;
+    --border-success-color: #5cb85c;
+
+    --hover-nav-color: linear-gradient(180deg, #3c65f6 0%, #3ebcd8 100%);
+    --submit-button-hover-color: #1c3e81;
+
+    --logo-color: linear-gradient(180deg, #00edff 0%, #1400ff 100%);
+
+    --title-text-xxl: 3rem;
+    --title-text-xl: 2rem;
+    --title-text-l: 1.75rem;
+    --title-text-m: 1.5rem;
+    --title-text-s: 1.25rem;
+    --title-text-xs: 1rem;
+
+    --shadow-color: rgba(49, 156, 255, 0.67);
+    --shadow-color-2: rgba(255, 65, 15, 0.75);
+
+    --gradient-effect-1: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0.7)
+    );
+
+    --background-sky: url('../assets/Background/bg-pattern-sky-lg.png');
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --title-text-xxl: 2.5rem;
+        --title-text-xl: 1.75rem;
+        --title-text-l: 1.5rem;
+        --title-text-m: 1.25rem;
+        --title-text-s: 1rem;
+        --title-text-xs: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --title-text-xxl: 2rem;
+        --title-text-xl: 1.5rem;
+        --title-text-l: 1.25rem;
+        --title-text-m: 1rem;
+        --title-text-s: 0.75rem;
+        --title-text-xs: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    :root {
+        --title-text-xxl: 1.75rem;
+        --title-text-xl: 1.25rem;
+        --title-text-l: 1rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    :root {
+        --title-text-xxl: 1.5rem;
+        --title-text-xl: 1rem;
+        --title-text-l: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --title-text-xxl: 1.25rem;
+        --title-text-xl: 1rem;
+        --title-text-l: 0.75rem;
+        --title-text-m: 0.5rem;
+        --title-text-s: 0.5rem;
+        --title-text-xs: 0.25rem;
+    }
+}

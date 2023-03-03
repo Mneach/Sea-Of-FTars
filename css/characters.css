@@ -1,0 +1,180 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 4rem;
+}
+
+.sky-background-top {
+    width: 100%;
+    position: absolute;
+    top: -4rem;
+    z-index: -1;
+}
+
+.sky-background-image-top {
+    width: 100%;
+    transform: scaleY(-1);
+}
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-top: 2rem;
+}
+
+.top-content-image {
+    width: 10%;
+}
+
+.top-content-title {
+    font-weight: 700;
+    font-size: var(--title-text-xxl);
+    text-shadow: 0px 0px 15px rgba(49, 156, 255, 0.67);
+}
+
+.top-content-text {
+    text-align: center;
+    font-size: var(--title-text-s);
+    width: 15rem;
+}
+
+.heroes {
+    width: 100%;
+}
+
+.heroes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4rem;
+    gap: 6rem;
+    padding: 4rem;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-icon {
+    width: 60%;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.hero-icon:hover {
+    filter: drop-shadow(0px 0px 10px var(--shadow-color));
+    cursor: pointer;
+}
+
+.hero-name {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    font-size: var(--title-text-s);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+}
+
+.enemies {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.enemies-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4rem;
+    gap: 6rem;
+    padding: 4rem;
+}
+
+.enemy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enemy-icon {
+    width: 60%;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.enemy-icon:hover {
+    filter: drop-shadow(0px 0px 10px var(--shadow-color-2));
+    cursor: pointer;
+}
+
+.enemy-name {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    font-size: var(--title-text-s);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+}
+
+@media screen and (max-width: 768px) {
+    .heroes-container,
+    .enemies-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .top-content-image {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heroes-container,
+    .enemies-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-content-image {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .hero-icon,
+    .enemy-icon {
+        width: 90%;
+    }
+
+    .top-content-text {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heroes-container,
+    .enemies-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-icon,
+    .enemy-icon {
+        width: 40%;
+    }
+
+    .hero-name,
+    .enemy-name {
+        width: 40%;
+    }
+}
